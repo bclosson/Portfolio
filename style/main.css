@@ -33,26 +33,32 @@ main {
 }
 
 .about {
+    background-color: grey;
+    align-items: center;
     display: flex;
     height: 25vh;
-    background-color: grey;
+    
 }
 
 .about #profile-pic {
     height: 80%;
+    width: 100px;
+    border-radius: 50%;
     padding: 3px 5px 3px 5px;
 }
 
 .projects {
+    background-color: lightblue;
+    align-items: center;
     display: flex;
     height: 25vh;
-    background-color: lightblue;
 }
 
 .experience {
+    background-color: lightyellow;
+    align-items: center;
     display: flex;
     height: 25vh;
-    background-color: lightyellow;
 }
 
 footer {
