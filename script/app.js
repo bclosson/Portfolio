@@ -27,33 +27,3 @@ function showSlides(n) {
   dots[slideIndex - 1].className += "active";
 }
 
-// Dynamically size projects images to be equal
-function setAspectRatio(projects, expected) {
-  if (projects.naturalWidth === 'undefined') return;
-
-  let width = projects.naturalWidth;
-  let height = projects.naturalHeight;
-
-  //  Examine if width is larger than height then reduce the width but fix the height
-
-  if (width > height) {
-    projects.style.width = (width / height * expected) + 'px';
-    projects.style.height = expected + 'px';
-
-      return projects;
-  }
-
-  // Examine if height is larger than width then reduce the height but fix the width
-  else if (height > width) {
-    projects.style.width = expected + 'px';
-    projects.styel.height = (height / width * expected) + 'px';
-
-      return projects;
-  }
-
-  // Or return fixed width and height
-  else {
-    projects.style.width = expected + 'px';
-    projects.style.height = expected + 'px';
-  }
-}
