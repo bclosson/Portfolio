@@ -6,6 +6,7 @@
 }
 
 body {
+    background-image: linear-gradient(to bottom left,#d0c3bd, #dcdcdd, #69849b, #3d6a66, #1d2424);
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -54,36 +55,18 @@ main {
 /* slideshow container */
 
 .slideshow-container {
-    background-color: seashell;
+    background-color: none;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-    padding: 2%;
-    margin: auto; 
+    padding: 2px;
+    margin: 2% 16%; 
 }
 
-/* Hide the images by default */
-
-/* #projects {
-    
-    display: flex; 
-    justify-content: center;
-    align-items: center;
-    position: relative;
-      
-} */
-
-/* #img-div {
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-} */
-
 #slide-img {
-    width: 60vw;
-    height: 80vh;
+    width: 50vw;
+    height: 70vh;
      
 }
 
@@ -97,7 +80,7 @@ main {
     width: auto;
     margin-top: -22px;
     padding: 16px;
-    color: hotpink;
+    color: lightslategray;
     font-weight: bold;
     font-size: 18px;
     transition: 0.6s ease;
@@ -119,7 +102,7 @@ main {
 
 /* On hover, add a black background color with a lit bit see-through */
 .prev:hover, .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(59, 56, 56, 0.8);
 }
 
 /* Caption text */
@@ -151,7 +134,7 @@ main {
     background-color: #bbb;
     border-radius: 50%;
     display: inline-block;
-    transition: background-color 0.6s ease;
+    transition: background-color 0.2s ease;
 }
 
 .active, .dot:hover {
@@ -199,18 +182,14 @@ footer {
 }
 
 .github {
+    color: lightyellow;
     font-size: 20px;
     display: inline;
     padding: 5px;
 }
 
 .linked-in {
-    font-size: 20px;
-    display: inline;
-    padding: 5px;
-}
-
-.codepen {
+    color: lightyellow;
     font-size: 20px;
     display: inline;
     padding: 5px;
