@@ -31,7 +31,9 @@ main {
 }
 
 .nav-link {
+    color: #1d2424;
     font-size: 20;
+    text-decoration: none;
     display: inline; 
     margin: 5px;
 }
@@ -46,10 +48,11 @@ main {
 }
 
 .about #profile-pic {
-    height: 80%;
+    height: 70%;
     width: auto;
-    border-radius: 50%;
+    border-radius: 20px;
     padding: 3px 5px 3px 5px;
+    margin: 0 0 0 20px;
 }
 
 /* slideshow container */
@@ -64,9 +67,13 @@ main {
     margin: 2% 16%; 
 }
 
+.numbertext {
+    color: none;
+}
+
 #slide-img {
     width: 50vw;
-    height: 70vh;
+    height: 60vh;
      
 }
 
@@ -179,6 +186,10 @@ footer {
     justify-content: flex-end;
     align-items: flex-end;
     height: 10vh;
+}
+
+#link {
+    text-decoration: none;
 }
 
 .github {
