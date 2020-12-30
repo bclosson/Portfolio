@@ -12,10 +12,10 @@
     <header class="head">
         <nav class="nav">
             <ul class="nav-ul">
-                <a id="link" href=""><li class="nav-link">About</li></a>
-                <a id="link" href=""><li class="nav-link">Projects</li></a>
-                <a id="link" href=""><li class="nav-link">Resume</li></a>
-                <a id="link" href=""><li class="nav-link">Contact</li></a>
+                <a id="link" href="#about-section"><li class="nav-link">About</li></a>
+                <a id="link" href="#projects-container"><li class="nav-link">Projects</li></a>
+                <a id="link" href="#resume"><li class="nav-link">Resume</li></a>
+                <a id="link" href="#contact"><li class="nav-link">Contact</li></a>
             </ul>
         </nav>
     </header>
@@ -23,20 +23,22 @@
     <main>
         <div>
         <!--    About Section        -->
-                <section class="about">
-                    <img id="profile-pic" src="images/head shot professional.jpg" alt="profile photo" width="50"> 
+                <section class="about" id="about-section">
+                    <img id="profile-pic" src="images/head shot professional.jpg" alt="profile photo"> 
                     <article>
                         <h3>About Me</h3>
-                        <p>I am a full stack develper with a background in the hospitality industry.  I am passionate about createin exeptional experiences and developing programs to enrich the lives of clients and users.  I have the desire to join a people focused organization as a developer that strives to make user experiences approachable and easy to navigate.</p>
+                        <p id="about-p">I am a full stack developer with a background in the hospitality industry.  I am passionate about creating exceptional experiences and developing programs to enrich the lives of clients and users.  I have the desire to join a people focused organization as a developer that strives to make user experiences approachable and easy to navigate.</p>
                     <br>
                     <br>
-                        <p>I offer a unique perspective coming from a customer focused industry in Hospitality, where being able to anticipate the needs of clients and colleagues is imperative to delivering hte best experiences, as well as being able to adjust to changing environmets rapidly given the needs of the moment.  I love helpig people relize their value, creating great experiences for clients, and working creaatively to solve problems that may not have obvious solutions.  I believe in hard work, focus, respectful communication, teamwork, and striving to keep buiding on knowledge and skills.</p>
+                        <p id="about-p">I offer a unique perspective coming from a customer focused industry in Hospitality, where being able to anticipate the needs of clients and colleagues is imperative to delivering hte best experiences, as well as being able to adjust to changing environmets rapidly given the needs of the moment.  I love helpig people relize their value, creating great experiences for clients, and working creaatively to solve problems that may not have obvious solutions.  I believe in hard work, focus, respectful communication, teamwork, and striving to keep buiding on knowledge and skills.</p>
+                        <br>
+                        <p id="about-p"></p>
                     </article>
                 </section>
 
         <!--    Project Section/Slideshow  Container     -->
-            <label for="projects-section" id="projects-label">Projects</label>
-            <div class="slideshow-container">
+            <h3>Projects</h3>
+            <div class="slideshow-container" id="projects-container">
 
             <!--  Full-Width images with number and caption text -->
 
@@ -86,13 +88,22 @@
             </div>
 
         <!--    Experience Section-->
-                <section class="experience">
+                <h3>Experience</h3>
+                <section class="experience" id="resume">
                     <article>This is where my experience will go!</article>
                 </section>
 
-                <section class="contact">
-                    <article>This is where my contact form will go!</article>
+                <h3>Contact</h3>
+                <section class="contact" id="contact">
+                    <div id="contact-info">
+                        <h4 id="contact-h4">Benjamin Closson</h4><br>                        
+                        <p id="contact-p">Seattle, WA</p><br>
+                        <p id="contact-p">benjaminclosson1@gmail.com</p><br>                        
+                        <p id="contact-p">206-390-5357</p>
+                    </div>
+                    
                 </section>
+
         </div>
 
         <footer>

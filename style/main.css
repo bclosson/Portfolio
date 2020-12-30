@@ -16,6 +16,11 @@ main {
     flex: 1;
 }
 
+h3 {
+    margin: 2% 0;
+    text-align: center;
+}
+
 /* Header/Navigation */
 .head {
     background-color: white;
@@ -42,7 +47,7 @@ main {
     display: inline; 
     margin: 5px;
 }
-/* About Section */
+/* ABOUT SECTION */
 
 .about {
     background-color: grey;
@@ -64,7 +69,10 @@ main {
     margin: 0 0 0 5px;
 }
 
-/* slideshow container */
+#about-p {
+    margin: 0 2%;
+}
+/* PROJECTS SECTION */
 
 .slideshow-container {
     background-color: none;
@@ -175,7 +183,7 @@ main {
     to {opacity: 1}
 }
 
-/* Experience Section */
+/* EXPERIENCE SECTION */
 .experience {
     background-color: lightyellow;
     align-items: center;
@@ -183,6 +191,29 @@ main {
     height: 10vh;
 }
 
+/* CONTACT SECTION */
+#contact {
+    background-color: none;
+}
+
+#contact-info {
+    background-color: lightgray;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 1%;
+    margin: 1% 35%;
+    text-align: left;
+    line-height: 60%;
+}
+
+#contact-h4 {
+    margin: 0 5px;
+}
+
+#contact-p {
+    padding: 0;
+    margin: 0 5px;
+}
 /* Footer/Social Navigation */
 
 footer {
@@ -214,3 +245,4 @@ footer {
     display: inline;
     padding: 5px;
 }
+
