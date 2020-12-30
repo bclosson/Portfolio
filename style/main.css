@@ -14,6 +14,8 @@ body {
 
 main {
     flex: 1;
+    border: 5px;
+    border-color: black;
 }
 
 h3 {
@@ -23,9 +25,15 @@ h3 {
 
 /* Header/Navigation */
 .head {
-    background-color: white;
-    border: 2px;
-    border-color: black;
+    background-color: #dcdcdd;
+}
+
+#header-h1 {
+    margin: 1% 0 0 2%;
+}
+
+#header-h4 {
+    margin: 0 2%;
 }
 
 .nav {
@@ -37,28 +45,35 @@ h3 {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    height: 10vh;
 }
 
 .nav-link {
     color: #1d2424;
-    font-size: 20;
+    font-size: 18px;
     text-decoration: none;
-    display: inline; 
-    margin: 5px;
+    display: block;
+    padding: 2%; 
+    margin: 0 5px;
 }
+
+.nav-link:hover {
+    font-weight: 700;
+}
+
 /* ABOUT SECTION */
 
 .about {
-    background-color: grey;
+    background-image: linear-gradient(to bottom right,#d0c3bd, #dcdcdd, #69849b, #3d6a66, #1d2424);
     align-items: center;
     display: flex;
-    /* height: 30vh; */
     border-radius: 20px;
     box-shadow: 2px 2px #69849b;
     padding: 1%;
-    margin: 2% 8%;
-    
+    margin: 2% 8%;   
+}
+
+#about-h3 {
+    margin: 0 15% 0 0;
 }
 
 .about #profile-pic {
@@ -75,12 +90,14 @@ h3 {
 /* PROJECTS SECTION */
 
 .slideshow-container {
-    background-color: none;
+    background-color: #dcdcdd;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-    margin: 2% 16%; 
+    border-radius: 5px;
+    padding: 2%;
+    margin: 2% 8%; 
 }
 
 .numbertext {
@@ -90,10 +107,8 @@ h3 {
 #slide-img {
     border-radius: 5px;
     width: 50vw;
-    height: 60vh;
-     
+    height: 60vh;   
 }
-
 
 /* Next & previous buttons */
 
@@ -185,10 +200,13 @@ h3 {
 
 /* EXPERIENCE SECTION */
 .experience {
-    background-color: lightyellow;
+    flex-direction: row;
+    background-color:#dcdcdd;
     align-items: center;
-    display: flex;
-    height: 10vh;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 1%;
+    margin: 2% 8%;
 }
 
 /* CONTACT SECTION */
@@ -197,13 +215,13 @@ h3 {
 }
 
 #contact-info {
-    background-color: lightgray;
+    background-color:#dcdcdd;
     font-size: 20px;
     border-radius: 5px;
     padding: 1%;
-    margin: 1% 35%;
+    margin: 2% 8%;
     text-align: left;
-    line-height: 60%;
+    line-height: 70%;
 }
 
 #contact-h4 {
