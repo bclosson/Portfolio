@@ -90,7 +90,7 @@ h3 {
 /* PROJECTS SECTION */
 
 .slideshow-container {
-    background-color: #dcdcdd;
+    background-color: none;
     display: flex;
     justify-content: center;
     align-items: center;
