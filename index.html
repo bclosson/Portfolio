@@ -14,9 +14,9 @@
         <h4 id="header-h4">Full Stack Sofware Developer</h4>
         <nav class="nav">
             <ul class="nav-ul">
-                <a id="link" href="#about-section"><li class="nav-link">About</li></a><br>
-                <a id="link" href="#projects-container"><li class="nav-link">Projects</li></a><br>
-                <a id="link" href="#resume"><li class="nav-link">Experience</li></a><br>
+                <a id="link" href="#about-section"><li class="nav-link">About</li></a>
+                <a id="link" href="#projects-container"><li class="nav-link">Projects</li></a>
+                <a id="link" href="#resume"><li class="nav-link">Experience</li></a>
                 <a id="link" href="#contact"><li class="nav-link">Contact</li></a>
             </ul>
         </nav>
@@ -92,7 +92,7 @@
         <!--    Experience Section-->
                 <h3>Experience</h3>
                 <section class="experience" id="resume">
-                    <p>A seasoned professional with 17 years in people management, relationship building, P&L management/cost controls, procurement, team building, hiring, training, operational systems management, customer experience customization in small private to large corporate environments. </p>
+                    <p>A seasoned professional with 17 years in people management, relationship building, P&L management/cost controls, procurement, team building, hiring, training, operational systems management, customer experience customization in small private to large corporate environments.</p><br>
                     <article><strong>Hotel 1000, All Water Seafood and Oyster Bar| 1000 1st Ave. Seattle, WA 98104</strong><br>
                     Executive Chef March 2018 – March 2020<br>
                     <strong>Heathman Hotel, Trellis Restaurant | 220 Kirkland Ave. Kirkland, WA 98033</strong><br>
@@ -102,15 +102,21 @@
                     </article>
                 </section>
 
+            <!-- CONTACT SECTION -->
                 <h3>Contact</h3>
-                <section class="contact" id="contact">
-                    <div id="contact-info">
-                        <h4 id="contact-h4">Benjamin Closson</h4><br>                        
-                        <p id="contact-p">Seattle, WA</p><br>
-                        <p id="contact-p">benjaminclosson1@gmail.com</p><br>                        
-                        <p id="contact-p">206-390-5357</p>
-                    </div>
-                    
+                <section class="contact-section">                                
+                    <form action="submit" id="contact">
+                        <input type="text" name="sender" label="Name" placeholder="Name"
+                            class="contact-input" id="sender">
+                        <input type="email" name="email" label="Email" placeholder="Email"
+                           class="contact-input" id="email">
+                        <input type="text" name="subject" label="Subject"                  placeholder="Subject" class="contact-input" id="subject">
+                        <textarea name="message" label="Message" id="text-area" cols="30"
+                         rows="10" placeholder="Message"></textarea>
+                         <input type="hidden" name="*honeypot">
+                         <button label="submit" onclick="sendMail()" id="contact-button"
+                            >Send Message</button>
+                    </form>
                 </section>
 
         </div>

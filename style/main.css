@@ -52,12 +52,12 @@ h3 {
     font-size: 18px;
     text-decoration: none;
     display: block;
-    padding: 2%; 
+    padding: 5px; 
     margin: 0 5px;
 }
 
 .nav-link:hover {
-    font-weight: 700;
+    color: #69849b;
 }
 
 /* ABOUT SECTION */
@@ -210,27 +210,30 @@ h3 {
 }
 
 /* CONTACT SECTION */
+
 #contact {
-    background-color: none;
-}
-
-#contact-info {
-    background-color:#dcdcdd;
-    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     border-radius: 5px;
-    padding: 1%;
-    margin: 2% 8%;
-    text-align: left;
-    line-height: 70%;
 }
 
-#contact-h4 {
-    margin: 0 5px;
+.contact-input {
+    height: 5vh;
+    margin: .15% 30%;
+    border-radius: 5px;
 }
 
-#contact-p {
-    padding: 0;
-    margin: 0 5px;
+#text-area {
+    margin: .15% 30%;
+    border-radius: 5px;
+}
+
+#contact-button {
+    height: 7vh;
+    width: 20vw;
+    margin: .15% 30%;
+    border-radius: 5px;
 }
 /* Footer/Social Navigation */
 
