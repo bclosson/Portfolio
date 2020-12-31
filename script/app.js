@@ -27,7 +27,3 @@ function showSlides(n) {
   dots[slideIndex - 1].className += "active";
 }
 
-const sendMail = form => {
-  const mailForm = document.getElementById('contact');
-  const sender = document.getElementById('sender')
-}

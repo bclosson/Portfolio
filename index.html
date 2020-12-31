@@ -11,7 +11,7 @@
 <!---        Header/Nav        -->
     <header class="head">
         <h1 id="header-h1">Benjamin Closson</h1>
-        <h4 id="header-h4">Full Stack Sofware Developer</h4>
+        <h4 id="header-h4">Sofware Developer</h4>
         <nav class="nav">
             <ul class="nav-ul">
                 <a id="link" href="#about-section"><li class="nav-link">About</li></a>
@@ -92,7 +92,7 @@
         <!--    Experience Section-->
                 <h3>Experience</h3>
                 <section class="experience" id="resume">
-                    <p>A seasoned professional with 17 years in people management, relationship building, P&L management/cost controls, procurement, team building, hiring, training, operational systems management, customer experience customization in small private to large corporate environments.</p><br>
+                    <p>A seasoned professional with 17 years in product development, people management, relationship building, P&L management/cost controls, procurement, team building, hiring, training, operational systems management, and customer experience customization in small private to large corporate environments.</p><br>
                     <article><strong>Hotel 1000, All Water Seafood and Oyster Bar| 1000 1st Ave. Seattle, WA 98104</strong><br>
                     Executive Chef March 2018 – March 2020<br>
                     <strong>Heathman Hotel, Trellis Restaurant | 220 Kirkland Ave. Kirkland, WA 98033</strong><br>
@@ -103,19 +103,27 @@
                 </section>
 
             <!-- CONTACT SECTION -->
-                <h3>Contact</h3>
+                <h3>Contact Benjamin</h3>
                 <section class="contact-section">                                
-                    <form action="submit" id="contact">
-                        <input type="text" name="sender" label="Name" placeholder="Name"
-                            class="contact-input" id="sender">
-                        <input type="email" name="email" label="Email" placeholder="Email"
-                           class="contact-input" id="email">
-                        <input type="text" name="subject" label="Subject"                  placeholder="Subject" class="contact-input" id="subject">
-                        <textarea name="message" label="Message" id="text-area" cols="30"
-                         rows="10" placeholder="Message"></textarea>
-                         <input type="hidden" name="*honeypot">
-                         <button label="submit" onclick="sendMail()" id="contact-button"
-                            >Send Message</button>
+                    <form
+                        id="contact"
+                        action="https://formspree.io/f/xayllkzw"
+                        method="POST"
+                        >
+                        <label>
+                            <input type="text" name="name" id="contact-input"
+                                placeholder="Name">
+                            <input type="text" name="_replyto" id="contact-input"
+                                placeholder="Email">
+                        </label>
+                        <label>
+                            <textarea name="message" id="text-area"
+                                placeholder="Message"></textarea>
+                        </label>
+
+                        <!-- your other form fields go here -->
+
+                        <button type="submit" id="contact-button">Send</button>
                     </form>
                 </section>
 
