@@ -7,10 +7,14 @@
 }
 
 body {
-    background-image: linear-gradient(to bottom left,#d0c3bd, #dcdcdd, #69849b, #3d6a66, #1d2424);
     display: flex;
     flex-direction: column;
+    background-image: linear-gradient(to bottom left,#d0c3bd, #dcdcdd, #69849b, #3d6a66, #1d2424);
+    background-image: cover;
     min-height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0;
 }
 
 main {
@@ -20,9 +24,6 @@ main {
 }
 
 /* Header/Navigation */
-.head {
-    background-color: #dcdcdd;
-}
 #title-row {
     display: flex;
 }
@@ -39,8 +40,8 @@ main {
     height: auto;
     width: 7vw;
     border-radius: 20px;
-    padding: 3px 5px 3px 5px;
-    margin: 12% 0 0 15%;
+    padding: 3% 5%;
+    margin: 25% 0 0 25%;
 }
 
 #header-h1 {
@@ -73,6 +74,7 @@ main {
 }
 
 .nav-link:hover {
+    transition: color 0.3s ease;
     color: #69849b;
 }
 
@@ -105,7 +107,8 @@ main {
 /* EXPERIENCE SECTION */
 #experience {
     flex: 50%;
-    background-image: linear-gradient(to bottom right,#d0c3bd, #dcdcdd, #69849b, #3d6a66, #1d2424);
+    background-color: none;
+    /* background-image: linear-gradient(to bottom right,#d0c3bd, #dcdcdd, #69849b, #3d6a66, #1d2424); */
     align-items: center;
     border-radius: 5px;
     padding: 1%;
@@ -149,7 +152,7 @@ main {
     width: auto;
     margin-top: -22px;
     padding: 16px;
-    color: lightslategray;
+    color: #1d2424;
     font-weight: bold;
     font-size: 18px;
     transition: 0.6s ease;
@@ -171,7 +174,8 @@ main {
 
 /* On hover, add a black background color with a lit bit see-through */
 .prev:hover, .next:hover {
-    background-color: rgba(59, 56, 56, 0.8);
+    background-color: rgba(84, 119, 129, 0.8);
+    border-radius: 5px;
 }
 
 /* Caption text */
@@ -229,6 +233,25 @@ main {
 }
 
 /* CONTACT MODAL */
+#contactBtn {
+    font-size: 200%;
+    text-shadow: 1px 1px #69849b;
+    background-color: #dcdcdd;
+    height: 15vh;
+    width: 40vw;
+    border-radius: 10px;
+    box-shadow: 1px 1px #69849b;
+    margin: 5% 30%;
+}
+
+#contactBtn:hover {
+    color:#d0c3bd;
+    text-shadow: 1px 1px whitesmoke;
+    background-color: #69849b;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
 .modal {
     display: none; /* hide by default */
     position: fixed;
@@ -239,16 +262,17 @@ main {
     height: 100%;
     overflow: auto; /* enables scroll if needed */
     background-color: rgb(0, 0, 0); /* fallback color */
-    background-color: rgba (0, 0, 0, 0.4); /* black with opacity */
+    background-color: rgba(0, 0, 0, 0.4); /* black with opacity */
 }
 
 /* modal content box */
 .modal-content {
-    background-color: #fefefe;
+    background-image: linear-gradient(to bottom right,#d0c3bd, #dcdcdd, #69849b, #3d6a66, #1d2424);
+    border-radius: 5px;
     margin: 15% auto; /* 15% from top and centered */
     padding: 20px;
     border: 1px solid #888;
-    width: 80%;
+    width: 63%;
 }
 
 /* close button */
@@ -276,22 +300,29 @@ main {
 }
 
 #contact-input {
+    font-size: 16px;
+    background-color: #EDF5E1;
     height: 7vh;
     width: 20vw;
-    margin: .15% 30%;
+    margin: .5% 30%;
     border-radius: 5px;
     box-shadow: 1px 1px #1d2424;
 }
 
 #text-area {
+    font-size: 16px;
+    background-color: #EDF5E1;
     height: 30vh;
-    width: 40vw;
-    margin: .15% 30%;
+    width: 30vw;
+    margin: .5% 30%;
     border-radius: 5px;
     box-shadow: 1px 1px #1d2424;
 }
 
 #contact-button {
+    font-size: 16px;
+    color: #1d2424;
+    background-color:#dcdcdd;
     height: 7vh;
     width: 15vw;
     margin: .15% 30%;
@@ -318,15 +349,20 @@ footer {
 
 .github {
     color: lightyellow;
-    font-size: 20px;
+    font-size: 30px;
     display: inline;
     padding: 5px;
 }
 
 .linked-in {
     color: lightyellow;
-    font-size: 20px;
+    font-size: 30px;
     display: inline;
     padding: 5px;
 }
 
+.github:hover,
+.linked-in:hover{
+    transition: color 0.3s ease;
+    color: #1d2424;
+}
