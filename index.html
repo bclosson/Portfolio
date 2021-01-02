@@ -117,30 +117,33 @@
         
                 
 
-            <!-- CONTACT SECTION -->
-                <h3 id="p-c-h3">Contact Benjamin</h3>
-                <section class="contact-section">                                
-                    <form
-                        id="contact"
-                        action="https://formspree.io/f/xayllkzw"
-                        method="POST"
-                        >
-                        <label>
-                            <input type="text" name="name" id="contact-input"
-                                placeholder="Name">
-                            <input type="text" name="_replyto" id="contact-input"
-                                placeholder="Email">
-                        </label>
-                        <label>
-                            <textarea name="message" id="text-area"
-                                placeholder="Message"></textarea>
-                        </label>
+            <!-- CONTACT MODAL -->
+                <button id="contactBtn">Contact Benjamin</button>
+                <div id="myModal" class="modal"> 
+                    <div class="modal-content">                   
+                        <span class="close">&times;</span>                               
+                        <form
+                            id="contact"
+                            action="https://formspree.io/f/xayllkzw"
+                            method="POST"
+                            >
+                            <label>
+                                <input type="text" name="name" id="contact-input"
+                                    placeholder="Name">
+                                <input type="text" name="_replyto" id="contact-input"
+                                    placeholder="Email">
+                            </label>
+                            <label>
+                                <textarea name="message" id="text-area"
+                                    placeholder="Message"></textarea>
+                            </label>
 
-                        <!-- your other form fields go here -->
+                            <!-- your other form fields go here -->
 
-                        <button type="submit" id="contact-button">Send</button>
-                    </form>
-                </section>
+                            <button type="submit" id="contact-button">Send</button>
+                        </form>
+                    </div>
+                </div>
 
         </div>
 
