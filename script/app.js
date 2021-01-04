@@ -24,10 +24,10 @@ function showSlides(n) {
     dots[i].className = dots[i].className.replace("active", "");
   }
   slides[slideIndex - 1].style.display = "inline";
-  dots[slideIndex - 1].className += "active";
+  dots[slideIndex].className += "active";
 }
 
-// MODAL 
+// CONTACT MODAL 
 const modal = document.getElementById('myModal');
 const btn = document.getElementById('contactBtn');
 const span = document.getElementsByClassName('close')[0];
