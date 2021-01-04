@@ -86,7 +86,6 @@ main {
 #about {
     flex: 50%;
     background-color: none;
-    /* background-image: linear-gradient(to bottom right,#d0c3bd, #dcdcdd, #69849b, #3d6a66, #1d2424); */
     align-items: left;
     border-radius: 5px;
     box-shadow: 2px 2px #69849b;
@@ -96,7 +95,6 @@ main {
 
 #about-h3 {
     font-size: 25px;
-    text-shadow: 1px 1px whitesmoke;
     margin: 0 15% 0 0;
 }
 
@@ -108,7 +106,6 @@ main {
 #experience {
     flex: 50%;
     background-color: none;
-    /* background-image: linear-gradient(to bottom right,#d0c3bd, #dcdcdd, #69849b, #3d6a66, #1d2424); */
     align-items: center;
     border-radius: 5px;
     padding: 1%;
@@ -117,9 +114,8 @@ main {
 
 /* PROJECTS SECTION */
 #p-c-h3 {
-    font-size: 25px;
-    text-shadow: 1px 1px whitesmoke;
-    margin: 1% 45% 1% 45%;
+    font-size: 40px;
+    margin: 1% 42% 1% 40%;
 }
 
 .slideshow-container {
@@ -137,12 +133,12 @@ main {
     color: none;
 }
 
+
 #slide-img {
     border-radius: 5px;
     width: 60vw;
     height: 70vh;   
 }
-
 /* Next & previous buttons */
 
 .prev, .next {
@@ -183,9 +179,10 @@ main {
     color: #f2f2f2;
     font-size: 15px;
     padding: 8px 12px;
-    position: absolute;
+    margin: 1% 0 0 0;
+    position: relative;
     bottom: 8px;
-    width: 100%;
+    width: 60vw;
     text-align: center;
 }
 
@@ -199,7 +196,7 @@ main {
 }
 
 /* Dots/bullets/indicators */
-.dot {
+/* .dot {
     cursor: pointer;
     height: 15px;
     width: 15px;
@@ -208,7 +205,7 @@ main {
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.2s ease;
-}
+} */
 
 .active, .dot:hover {
     background-color: #717171;
@@ -322,9 +319,10 @@ main {
 }
 
 #contact-button {
-    font-size: 16px;
-    color: #1d2424;
-    background-color: rgba(178, 188, 197, 0.8);
+    font-size: 18px;
+    font-weight: bolder;
+    color: black;
+    background-color: #69849b;
     height: 7vh;
     width: 15vw;
     margin: .15% 30%;
@@ -333,7 +331,7 @@ main {
 }
 
 #contact-button:hover {
-    background-color: #69849b;
+    background-color: rgba(178, 188, 197, 0.8);
     transition: background-color 0.3s ease;
     cursor: pointer;
 }
