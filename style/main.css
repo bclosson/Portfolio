@@ -174,8 +174,7 @@ main {
 
 /* CONTACT MODAL */
 #contactBtn {
-  font-size: 200%;
-  /* text-shadow: 1px 1px #69849b; */
+  font-size: 30px;
   background-color: #dcdcdd;
   height: 15vh;
   width: 40vw;
@@ -186,7 +185,6 @@ main {
 
 #contactBtn:hover {
   color: #d0c3bd;
-  /* text-shadow: 1px 1px whitesmoke; */
   background-color: #69849b;
   transition: background-color 0.3s ease;
   cursor: pointer;
