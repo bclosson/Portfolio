@@ -119,12 +119,18 @@ main {
 }
 
 /* PROJECTS SECTION */
-#p-c-h3 {
-  font-size: 40px;
-  margin: 1% 42% 1% 40%;
+
+#projects-section {
+  flex: 1;
 }
 
-.slideshow-container {
+#project1_3 {
+  flex: 50%;
+  background-color: lightyellow;
+  margin: 5% 15% 5% 40%;
+}
+
+/* .slideshow-container {
   background-color: none;
   display: flex;
   justify-content: center;
@@ -137,12 +143,13 @@ main {
 
 .numbertext {
   color: none;
-}
+} */
 
-#slide-img {
+#img {
   border-radius: 5px;
-  width: 30vw;
+  width: 40vw;
   height: auto;
+  padding: 0 10% 0 10%;
 }
 /* Next & previous buttons */
 
@@ -182,15 +189,16 @@ main {
 }
 
 /* Caption text */
-.text {
+#text {
+  flex: 50%;
   color: #f2f2f2;
   font-size: 15px;
-  padding: 8px 12px;
+  /* padding: 8px 12px; */
   margin: 1% 0 0 0;
   position: relative;
-  bottom: 8px;
-  width: 60vw;
-  text-align: center;
+  /* bottom: 8px;
+  width: 60vw; */
+  text-align: left;
 }
 
 /* Number text (1/4 etc) */
