@@ -141,8 +141,8 @@ main {
 
 #slide-img {
   border-radius: 5px;
-  width: 60vw;
-  height: 70vh;
+  width: 30vw;
+  height: auto;
 }
 /* Next & previous buttons */
 
