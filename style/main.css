@@ -104,10 +104,6 @@ main {
   margin: 0 15% 0 0;
 }
 
-#about-p {
-  margin: 1% 2%;
-}
-
 /* EXPERIENCE SECTION */
 #experience {
   flex: 50%;
@@ -121,136 +117,49 @@ main {
 /* PROJECTS SECTION */
 
 #projects-section {
+  display: flex;
   flex: 1;
+  flex-wrap: wrap;
+}
+
+#project-h3 {
+  font-size: 150%;
 }
 
 #project1_3 {
-  flex: 50%;
   background-color: lightyellow;
-  margin: 5% 15% 5% 40%;
+  opacity: 0.9;
+  margin: 2% 15% 2% 40%;
+  padding: 1% 5% 1% 5%;
 }
 
-/* .slideshow-container {
-  background-color: none;
+#project2_4 {
+  background-color: lightyellow;
+  opacity: 0.9;
+  margin: 2% 40% 2% 15%;
+  padding: 1% 5% 1% 5%;
+}
+
+#img-div {
   display: flex;
-  justify-content: center;
+  align-content: center;
   align-items: center;
-  position: relative;
-  border-radius: 5px;
-  padding: 2%;
-  margin: 2% 8%;
 }
-
-.numbertext {
-  color: none;
-} */
 
 #img {
   border-radius: 5px;
   width: 40vw;
   height: auto;
-  padding: 0 10% 0 10%;
-}
-/* Next & previous buttons */
-
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: #1d2424;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* position the "prev button" to the left */
-.prev {
-  left: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a lit bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(84, 119, 129, 0.8);
-  border-radius: 5px;
+  align-self: center;
 }
 
 /* Caption text */
 #text {
-  flex: 50%;
-  color: #f2f2f2;
+  color: black;
   font-size: 15px;
-  /* padding: 8px 12px; */
-  margin: 1% 0 0 0;
+  margin: 1%, 5% 5% 5%;
   position: relative;
-  /* bottom: 8px;
-  width: 60vw; */
   text-align: left;
-}
-
-/* Number text (1/4 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* Dots/bullets/indicators */
-/* .dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.2s ease;
-} */
-
-.active,
-.dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
 }
 
 /* CONTACT MODAL */
@@ -387,7 +296,7 @@ footer {
   font-size: 500%;
   display: inline;
   /* margin: 0 5% 0 5%;
-  padding: 0 25% 0 25%; */
+    padding: 0 25% 0 25%; */
 }
 
 .linked-in {
@@ -395,7 +304,7 @@ footer {
   font-size: 500%;
   display: inline;
   /* margin: 0 5% 0 5%;
-  padding: 0 25% 0 25%; */
+    padding: 0 25% 0 25%; */
 }
 
 .github:hover,
