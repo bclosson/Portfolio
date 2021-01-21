@@ -121,6 +121,10 @@ main {
   flex: 1;
   flex-wrap: wrap;
 }
+#projects-title {
+  font-size: 25px;
+  margin: 0 0 0 40%;
+}
 
 #project-h3 {
   font-size: 150%;
@@ -129,6 +133,7 @@ main {
 #project1_3 {
   background-color: lightyellow;
   opacity: 0.9;
+  border-radius: 5px;
   margin: 2% 15% 2% 40%;
   padding: 1% 5% 1% 5%;
 }
@@ -136,6 +141,7 @@ main {
 #project2_4 {
   background-color: lightyellow;
   opacity: 0.9;
+  border-radius: 5px;
   margin: 2% 40% 2% 15%;
   padding: 1% 5% 1% 5%;
 }
@@ -150,7 +156,11 @@ main {
   border-radius: 5px;
   width: 40vw;
   height: auto;
-  align-self: center;
+  margin: 2% 0 0 0;
+}
+
+#img:hover {
+  opacity: 0.8;
 }
 
 /* Caption text */
@@ -165,7 +175,7 @@ main {
 /* CONTACT MODAL */
 #contactBtn {
   font-size: 200%;
-  text-shadow: 1px 1px #69849b;
+  /* text-shadow: 1px 1px #69849b; */
   background-color: #dcdcdd;
   height: 15vh;
   width: 40vw;
@@ -176,7 +186,7 @@ main {
 
 #contactBtn:hover {
   color: #d0c3bd;
-  text-shadow: 1px 1px whitesmoke;
+  /* text-shadow: 1px 1px whitesmoke; */
   background-color: #69849b;
   transition: background-color 0.3s ease;
   cursor: pointer;
